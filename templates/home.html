@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
 
+<nav>
+<h3>Speed Analytics</h3>
+<div>
+<a href="/">Home</a>
+<a href="/dashboard">Dashboard</a>
+<a href="/about">About</a>
+</div>
+</nav>
+
+<div class="container hero">
+
+<div>
+<h1>🌐 Internet Speed Regional Comparison Dashboard</h1>
+<p class="des">
+This project analyzes global broadband and mobile speeds using Python and Power BI.
+Built to understand performance differences across countries.
+</p>
+
+<a href="/dashboard"><button>Explore Dashboard</button></a>
+</div>
+
+<div>
+<img src="{{ url_for('static', filename='dashboard.png') }}" class="dashboard-img">
+</div>
+
+</div>
+
+<div class="container">
+
+<h2>Features</h2>
+
+<div class="grid">
+<div class="card">
+<h3>📊 Data Cleaning</h3>
+<p>Processed dataset using Python.</p>
+</div>
+
+<div class="card">
+<h3>🌍 Global Comparison</h3>
+<p>Compare countries easily.</p>
+</div>
+
+<div class="card">
+<h3>📈 Visualization</h3>
+<p>Power BI dashboard + graphs.</p>
+</div>
+
+<div class="card">
+<h3>📉 Insights</h3>
+<p>Identify patterns and trends.</p>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

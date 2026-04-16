@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+<h3>Speed Analytics</h3>
+<div>
+<a href="/">Home</a>
+<a href="/dashboard">Dashboard</a>
+<a href="/about">About</a>
+</div>
+</nav>
+
+<div class="container">
+<h1>Power BI Dashboard</h1>
+
+<img src="{{ url_for('static', filename='dashboard.png') }}" class="dashboard-img">
+</div>
+
+<div class="container">
+
+<h2>Key Insights</h2>
+
+<div class="grid">
+<div class="card"><p>Monaco & Singapore lead broadband speeds.</p></div>
+<div class="card"><p>Broadband is faster than mobile globally.</p></div>
+<div class="card"><p>Developed countries perform better.</p></div>
+<div class="card"><p>Large variation exists across regions.</p></div>
+</div>
+
+</div>
+
+<div class="container">
+
+<h2>Advanced Analysis</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Top Broadband</h3>
+<img src="{{ url_for('static', filename='top10_broadband.png') }}" class="dashboard-img">
+<p>Top 10 fastest countries.</p>
+</div>
+
+<div class="card">
+<h3>Top Mobile</h3>
+<img src="{{ url_for('static', filename='top10_mobile.png') }}" class="dashboard-img">
+<p>Top mobile speeds.</p>
+</div>
+
+<div class="card">
+<h3>Scatter</h3>
+<img src="{{ url_for('static', filename='scatter.png') }}" class="dashboard-img">
+<p>Broadband vs mobile relationship.</p>
+</div>
+
+<div class="card">
+<h3>Distribution</h3>
+<img src="{{ url_for('static', filename='hist.png') }}" class="dashboard-img">
+<p>Speed distribution.</p>
+</div>
+
+<div class="card">
+<h3>Pie</h3>
+<img src="{{ url_for('static', filename='pie.png') }}" class="dashboard-img">
+<p>Top 5 share.</p>
+</div>
+
+<div class="card">
+<h3>Bottom Countries</h3>
+<img src="{{ url_for('static', filename='bottom10.png') }}" class="dashboard-img">
+<p>Lowest speeds.</p>
+</div>
+
+<div class="card">
+<h3>Average</h3>
+<img src="{{ url_for('static', filename='avg.png') }}" class="dashboard-img">
+<p>Average comparison.</p>
+</div>
+
+<div class="card">
+<h3>Rank</h3>
+<img src="{{ url_for('static', filename='rank.png') }}" class="dashboard-img">
+<p>Rank vs speed.</p>
+</div>
+
+<div class="card">
+<h3>Heatmap</h3>
+<img src="{{ url_for('static', filename='heatmap.png') }}" class="dashboard-img">
+<p>Correlation analysis.</p>
+</div>
+
+<div class="card">
+<h3>Outliers</h3>
+<img src="{{ url_for('static', filename='box.png') }}" class="dashboard-img">
+<p>Outlier detection.</p>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
